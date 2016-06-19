@@ -30,6 +30,13 @@ public class TestMyUnit {
         System.out.println(mu1);
         System.out.println(mu2);
         System.out.println(mu1.equals(mu2));
+
+        mu1.getUnits()[1].setStr("Test");
+        mu1.getUnits()[1].setI(1111);
+        //mu1.getInts()[1]=1111;
+        System.out.println(mu1);
+        System.out.println(mu2);
+        System.out.println(mu1.equals(mu2));
         System.out.println("TestMyUnit end..................");
     }
 

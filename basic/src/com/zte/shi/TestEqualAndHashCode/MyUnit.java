@@ -299,7 +299,13 @@ public class MyUnit implements Cloneable {
         MyUnit mu = (MyUnit)super.clone();
         mu.setaUnit((Unit) mu.getaUnit().clone());
         mu.setInts(mu.getInts().clone());
-        mu.setUnits(mu.getUnits().clone());
+        Unit[] u_origin = mu.getUnits();
+        Unit[] u_toAdd = new Unit[u_origin.length];
+        for(int i=0;i<u_origin.length;i++){
+            u_toAdd[i]=(Unit)u_origin[i].clone();
+        }
+        mu.setUnits(u_toAdd);
+        //mu.setUnits(mu.getUnits().clone());
         return mu;
     }
 }
