@@ -1,4 +1,4 @@
-package com.zte.shi.TestEqualAndHashCode;
+package com.zte.shi.Reference;
 
 import java.lang.ref.SoftReference;
 import java.lang.ref.WeakReference;
