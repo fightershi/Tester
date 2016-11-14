@@ -1,8 +1,6 @@
 package com.zte.shi.TestEqualAndHashCode;
 
 import java.util.Arrays;
-import java.util.Objects;
-
 /**
  * Created by Administrator on 2016/6/19.
  */
